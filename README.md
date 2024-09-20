@@ -36,16 +36,15 @@ Alerta: Quando a temperatura passa dos 94°C, o servidor envia uma mensagem auto
 Histórico: Toda a coleta de dados é armazenada no Firebase e pode ser acessada a qualquer momento pelo painel web. Você pode ver todos os registros e analisar os dados para melhorar a operação.
 
 ##  LOGIN
-![Captura de tela 2024-09-19 192501](https://github.com/user-attachments/assets/ab71fdec-45c0-4c46-805e-7a0d4ccfca61)
+![login](https://github.com/user-attachments/assets/09fcec3e-c5fd-4fdc-9f61-1ffba024841e)
 ##  DASHBOARD 
-![Captura de tela 2024-09-19 192702](https://github.com/user-attachments/assets/84150609-2196-430c-b4d4-3871188417b3)
+![dashboard](https://github.com/user-attachments/assets/a0fdae23-e7c5-46b5-a198-a9356f716014)
 ##  HISTORICO
-![Captura de tela 2024-09-19 192716](https://github.com/user-attachments/assets/79df79ca-d67c-4d2b-b8cc-1d5ef0b5292f)
+![historico](https://github.com/user-attachments/assets/31d174e1-71ec-4fb6-98da-ee15d4e64c26)
 ##  INSIGHTS
-![Captura de tela 2024-09-19 192853](https://github.com/user-attachments/assets/2dd6b6f6-eac6-4002-bba5-0003ee1a4a86)
-
+![insights](https://github.com/user-attachments/assets/c6035f32-2650-4fb8-8cc7-6001221bf06e)
 ## TELEGRAM
-![WhatsApp Image 2024-09-19 at 19 32 49](https://github.com/user-attachments/assets/ce73bbe0-0b52-465a-bd5f-2f9921363865)
+![telegram](https://github.com/user-attachments/assets/4fdd3340-573d-42ce-8982-1795b560b02a)
 
 
 
