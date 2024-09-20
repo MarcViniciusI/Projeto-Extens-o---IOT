@@ -1,3 +1,4 @@
 /.env
 /.venv
 /secadora monitor/.env
+/secadora monitor/__pycache__
