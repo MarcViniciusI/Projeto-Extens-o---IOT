@@ -4,7 +4,7 @@ import firebase_admin
 from firebase_admin import credentials, auth
 
 # Inicialize o Firebase com as credenciais
-FIREBASE_CREDENTIALS_PATH = os.getenv('FIREBASE_CREDENTIALS_PATH')
+FIREBASE_CREDENTIALS_PATH = os.getenv('FIREBASE_CREDENTIALS_PATH')#Segurança de Dados Sensíveis: O .env é o local ideal para armazenar dados
 cred = credentials.Certificate(FIREBASE_CREDENTIALS_PATH)
 firebase_admin.initialize_app(cred)
 

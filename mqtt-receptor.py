@@ -11,20 +11,20 @@ import requests
 load_dotenv()
 
 # Configurações MQTT
-MQTT_BROKER = os.getenv('MQTT_BROKER', 'localhost')
+MQTT_BROKER = os.getenv('MQTT_BROKER', 'localhost') #Segurança de Dados Sensíveis: O .env é o local ideal para armazenar dados
 MQTT_PORT = int(os.getenv('MQTT_PORT', 1883))
 MQTT_TOPIC = os.getenv('MQTT_TOPIC', 'secadora/temperatura')
 MQTT_ALERT_TOPIC = os.getenv('MQTT_ALERT_TOPIC', 'secadora/alerta')
 
 # Configurações Firebase
-FIREBASE_CREDENTIALS_PATH = os.getenv('FIREBASE_CREDENTIALS_PATH')
+FIREBASE_CREDENTIALS_PATH = os.getenv('FIREBASE_CREDENTIALS_PATH') #Segurança de Dados Sensíveis: O .env é o local ideal para armazenar dados
 
 if not FIREBASE_CREDENTIALS_PATH:
     raise ValueError(
         "A variável de ambiente FIREBASE_CREDENTIALS_PATH não está definida")
 
 # Configurações do Telegram
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN') #Segurança de Dados Sensíveis: O .env é o local ideal para armazenar dados
 TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 
 

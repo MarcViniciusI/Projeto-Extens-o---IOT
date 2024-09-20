@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')#Segurança de Dados Sensíveis: O .env é o local ideal para armazenar dados
 CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 
 

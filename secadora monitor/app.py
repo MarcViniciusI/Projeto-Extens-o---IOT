@@ -12,7 +12,7 @@ load_dotenv()
 
 # Configuração da aplicação Flask
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY')
+app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY')#Segurança de Dados Sensíveis: O .env é o local ideal para armazenar dados
 
 # Configuração do Login Manager
 login_manager = LoginManager()
