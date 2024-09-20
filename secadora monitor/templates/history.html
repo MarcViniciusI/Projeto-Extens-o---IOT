@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Histórico de Temperaturas</h2>
+
+<div class="temperature-history">
+  {% if temp_history %}
+    <table>
+      <thead>
+        <tr>
+          <th>Data e Hora</th>
+          <th>Temperatura (°C)</th>
+          <th>Alerta</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for record in temp_history %}
+          <tr>
+            <td>{{ record.timestamp.strftime('%d/%m/%Y %H:%M:%S') }}</td>
+            <td>{{ record.temperatura }}</td>
+            <td>{{ record.alerta }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>Não há registros disponíveis.</p>
+  {% endif %}
+</div>
+
+{% endblock %}

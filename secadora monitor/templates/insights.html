@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Insights</h2>
+<div class="insights">
+    <p>Temperatura Média: {{ "%.2f"|format(insight_data.avg_temp) }}°C</p>
+    <p>Temperatura Máxima: {{ "%.2f"|format(insight_data.max_temp) }}°C</p>
+    <p>Temperatura Mínima: {{ "%.2f"|format(insight_data.min_temp) }}°C</p>
+</div>
+<div id="temp-chart"></div>
+<script>
+    var graphJSON = {{ insight_data.graph_json|safe }};
+    Plotly.newPlot('temp-chart', graphJSON.data, graphJSON.layout);
+</script>
+{% endblock %}
